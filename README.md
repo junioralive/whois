@@ -1,4 +1,4 @@
-# WHOIS REST API 🌍
+# [WHOIS REST API 🌍](https://whois.com/whois/)
 
 The WHOIS REST API is an unofficial tool that offers users the ability to perform WHOIS lookups for domain names. This API fetches raw WHOIS data and parses it into a structured JSON format, simplifying the integration of domain lookup features into your own applications.
 
