@@ -190,11 +190,15 @@ def whois_api():
     if domain:
         raw_whois_data = fetch_whois_data(domain)
         if raw_whois_data:
-            return jsonify({"raw_data": raw_whois_data})
+            whois_data = parse_whois_data(raw_whois_data)
+            if whois_data:
+                return jsonify(whois_data)
+            else:
+                return jsonify({"error": "Failed to parse WHOIS data"}), 500
         else:
             return jsonify({"error": "Failed to fetch WHOIS data or Domain does not exist"}), 404
     else:
-        return jsonify({"error": "No domain parameter provided"}), 400
+        return jsonify({"error": "No domain provided"}), 400
 
 if __name__ == '__main__':
     app.run(debug=True)
