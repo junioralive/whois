@@ -9,6 +9,11 @@ The WHOIS REST API is an unofficial tool that offers users the ability to perfor
 - Interactive web interface for manual domain lookups. 🖥️
 - Unofficial RESTful service built with Flask. 🛠️
 
+## Vercel
+Host your own instance of the crt.sh REST API on Vercel with a simple click using the button below.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%junioralive%2Fwhois)
+
 ## Installation 🛠️
 
 Before you can run the WHOIS REST API, you need to ensure you have Python and Flask installed on your system. Follow these steps to set up the project on your local machine.
